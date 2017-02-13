@@ -6,6 +6,7 @@ class Sherpa < Formula
   head "https://github.com/mikeastock/sherpa-cli.git"
 
   depends_on "rust" => :build
+  depends_on "cmake" => :build
 
   def install
     system("cargo", "build", "--release")
